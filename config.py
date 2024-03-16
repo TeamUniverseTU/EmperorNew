@@ -29,6 +29,8 @@ PORT = os.environ.get("PORT", "8030")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "")
+#jugaad
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #desi /simple fsub
