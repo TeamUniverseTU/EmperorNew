@@ -12,13 +12,13 @@ from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 
 from bot import Bot
 from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
-from helper_func import subscribed, encode, decode, get_messages
+from helper_func import subscribed, subscribed4, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
 
 
 
-@Bot.on_message(filters.command('start') & filters.private & subscribed)
+@Bot.on_message(filters.command('start') & filters.private & subscribed & subscribed4)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
     if not await present_user(id):
@@ -119,12 +119,16 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
     
     
 @Bot.on_message(filters.command('start') & filters.private)
-async def not_joined(client: Client, message: Message):
+async def not_joined(client: Client, message: Message):    
     buttons = [
+            [
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink2),
+            ],            
         [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink),
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink2),
-        ]
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 3", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 4", url=client.invitelink4),
+            ],
     ]
     try:
         buttons.append(
