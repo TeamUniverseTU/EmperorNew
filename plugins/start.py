@@ -119,17 +119,19 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
     
     
 @Bot.on_message(filters.command('start') & filters.private)
-async def not_joined(client: Client, message: Message):    
+async def not_joined(client: Client, message: Message): 
     buttons = [
-            [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink2),
-            ],            
-        [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 3", url=client.invitelink3),
-                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 4", url=client.invitelink4),
-            ],
+    [InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/PAWSOG_bot/PAWS?startapp=zrRRD5FP")],
+    [
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),  
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink2) 
+    ],
+    [
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 3", url=client.invitelink3),  
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 4", url=client.invitelink4)   
     ]
+    ]
+    
     try:
         buttons.append(
             [
