@@ -29,7 +29,7 @@ async def is_subscribed(filter, client, update):
     else:
         return True
 
-async def is_subscribed(filter, client, update):
+async def is_subscribed2(filter, client, update):
     if not FORCE_SUB_CHANNEL2:
         return True
     user_id = update.from_user.id
@@ -45,7 +45,7 @@ async def is_subscribed(filter, client, update):
     else:
         return True
 
-async def is_subscribed(filter, client, update):
+async def is_subscribed3(filter, client, update):
     if not FORCE_SUB_CHANNEL3:
         return True
     user_id = update.from_user.id
@@ -165,5 +165,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 subscribed = filters.create(is_subscribed)
+subscribed2 = filters.create(is_subscribed2)
 subscribed4 = filters.create(is_subscribed4)
-       
+subscribed3 = filters.create(is_subscribed3)
+
+
