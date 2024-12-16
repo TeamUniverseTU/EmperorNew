@@ -26,7 +26,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001882054182"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "2098973647"))
 
 #Port
-PORT = os.environ.get("PORT", "5284")
+PORT = os.environ.get("PORT", "2284")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://UniverseHUb:AryanDamddyTU@universehub.kqpwqml.mongodb.net/?retryWrites=true&w=majority&appName=UniverseHUb")
