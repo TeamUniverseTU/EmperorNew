@@ -123,7 +123,8 @@ async def not_joined(client: Client, message: Message):
     buttons = [
     [InlineKeyboardButton(text="ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url="https://t.me/PAWSOG_bot/PAWS?startapp=zrRRD5FP")],
     [
-        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink)
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),
+        InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink4)   
     ],
     [
         InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink2)   
