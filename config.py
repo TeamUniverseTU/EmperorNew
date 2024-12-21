@@ -26,7 +26,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001882054182"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "2098973647"))
 
 #Port
-PORT = os.environ.get("PORT", "2284")
+PORT = os.environ.get("PORT", "2567")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://UniverseHUb:AryanDamddyTU@universehub.kqpwqml.mongodb.net/?retryWrites=true&w=majority&appName=UniverseHUb")
@@ -39,7 +39,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001540354702"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002327162033"))
 FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "0"))
 # Req Fsub
-FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1002489482565"))
+FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
