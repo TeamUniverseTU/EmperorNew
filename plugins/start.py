@@ -121,7 +121,7 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message): 
     buttons = [
-    [InlineKeyboardButton(text="ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url="https://t.me/PAWSOG_bot/PAWS?startapp=zrRRD5FP")],
+    [InlineKeyboardButton(text="ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url="https://t.me/UXUYbot/app?startapp=A_5691800418_inviteEarn")],
     [
         InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),
         InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink4)   
