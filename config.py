@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7162464725:AAEkcCtM-u0X2l4ldv2JiKLs3kbvcTDVFqU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7162464725:AAHpJ3ASN0yunC7CxPOWU7k9jVpra9YQlPs")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "22418774"))
@@ -26,7 +26,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001924444177"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "2098973647"))
 
 #Port
-PORT = os.environ.get("PORT", "2937")
+PORT = os.environ.get("PORT", "2737")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://EmperorBot:EmperorsBot@emperorsbot.hjspw9i.mongodb.net/?retryWrites=true&w=majority&appName=EmperorsBot")
@@ -37,7 +37,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 #desi /simple fsub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001976425544"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001626607281"))
-FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "0"))
+FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1001450281204"))
 # Req Fsub
 FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1002437263650"))
 
